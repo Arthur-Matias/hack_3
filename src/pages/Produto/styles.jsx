@@ -14,6 +14,7 @@ export const InputWrapper = styled.div`
     padding: 10px 20px;
 `;
 
+
 export const SearchInput = styled.input`
     margin-top: 150px;
     width: 500px;

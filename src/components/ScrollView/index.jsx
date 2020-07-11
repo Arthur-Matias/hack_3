@@ -1,31 +1,27 @@
 import React from 'react';
-import { Container} from './styles.jsx';
-import Product from '../Product';
+import { Container, Left, Right} from './styles.jsx';
+import Product from '../ProductOverview';
 
 export default function ScrollView({ history }){
     return (
         <>
             <Container>
-                    <Product
-                            name = "Conserto de tela Iphone"
-                            price = "99,99"
-                            short-description = "Conserto telas Iphone por 99,99"
-                        />
-                        <Product
-                            name = "Conserto de tela Iphone"
-                            price = "99,99"
-                            short-description = "Conserto telas Iphone por 99,99"
-                        />
-                        <Product
-                            name = "Conserto de tela Iphone"
-                            price = "99,99"
-                            short-description = "Conserto telas Iphone por 99,99"
-                        />
-                        <Product
-                            name = "Conserto de tela Iphone"
-                            price = "99,99"
-                            short-description = "Conserto telas Iphone por 99,99"
-                        />
+            {Array.from(Array(3).keys()).map((n) =>(
+                <Product
+                name = "Conserto de tela Iphone"
+                price = "99,99"
+                shortDescription = "Conserto telas Iphone por 99,99"
+                />
+            ))}          
+            </Container>
+            <Container>
+            {Array.from(Array(3).keys()).map((n) =>(
+                <Product
+                name = "Conserto de tela Iphone"
+                price = "99,99"
+                shortDescription = "Conserto telas Iphone por 99,99"
+                />
+            ))}
             </Container>
         </>
     )

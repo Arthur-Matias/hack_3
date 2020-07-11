@@ -7,9 +7,12 @@ export default function Cliente({ history }){
     return (
         <>
             <Container>
-                <TopMenu className="Cliente" />
+                <TopMenu 
+                    className="Cliente isHome"
+                    name="Home Cliente" 
+                />
                 <InputWrapper>
-                    <SearchInput />
+                    <SearchInput placeholder="Busque por um Produto aqui"/>
                     <aside>filtros</aside>
                 </InputWrapper>
                 <ScrollView />

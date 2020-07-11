@@ -8,14 +8,12 @@ export default function TopMenu(props){
     return (
         <>
             <MenuContainer className="Cliente">
-                <LeftIcon className={props.isHome? "isHome":""} />
-                <Title></Title>
+                <LeftIcon />
+                <Title>{props.name}</Title>
                 <RightIcon onclick={dropDownclick()}>
                     <ul id='myDropdown' className="dropdown-content">
-                        <li className={props.isHome? "isHome drop-down-item":"drop-down-item"}>op1</li>
-                        <li className={props.isHome? "isHome drop-down-item":"drop-down-item"}>op2</li>
-                        <li className={props.isHome? "isHome drop-down-item":"drop-down-item"}>op3</li>
-                        <li className={props.isHome? "isHome drop-down-item":"drop-down-item"}>op4</li>
+                        <li className="drop-down-item">op1</li>
+                        <li className="drop-down-item">op2</li>
                     </ul>
                 </RightIcon>
             </MenuContainer>
