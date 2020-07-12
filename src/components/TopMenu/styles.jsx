@@ -9,23 +9,21 @@ export const MenuContainer = styled.div`
     top:0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 60px;
     background-color: var(--soft-purple)
-    
 `;
 
 export const LeftIcon = styled(Menu)`
     display: block;
-    height: 40px;
+    height: 3vh;
     align-self: center;
     justify-self: center;
     margin: 50px;
     cursor: pointer;
     transition: color 200ms;
     &:hover{
-        color: var(--white);
+        color: rgba(0, 0, 0, 0.5);
     }
-    
 `;
 
 export const Title = styled.strong`
@@ -44,9 +42,9 @@ export const RightIcon = styled(DotsThreeVertical)`
     justify- self: center;
     margin: 50px;
     cursor: pointer;
-    transition: color 200ms;
+    transition color 200ms;
     &:hover{
-        color: var(--white);
+        color: rgba(0, 0, 0, 0.5);
     }
 `;
 
