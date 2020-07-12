@@ -13,9 +13,10 @@ export default function Login(){
     function Vendedor(){
         history.push('/vendedor')
     }
-    function Cliente(){
+    function Cliente(event){
         history.push('/cliente')
     }
+
     return (
         <>
             <Container>
@@ -23,9 +24,9 @@ export default function Login(){
                     <img src={logo} alt="logo"/>
                 </Logo>
                 <ButtonContainer>
-                    <Button id="deliveryButton" onclick={Entregador}>Sou entregador</Button>
-                    <Button id="vendorButton" onclick={Vendedor}>Sou vendedor</Button>
-                    <Button id="clientButton" onclick={Cliente}>Sou cliente</Button>
+                    <Button id="clientButton" onClick = {(e) =>Cliente()}>Cliente</Button>
+                    <Button id="deliveryButton" onClick = {(e) =>Entregador()}>Sou Entregador</Button>
+                    <Button id="vendorButton" onClick = {(e) =>Vendedor()}>Sou vendedorr</Button>
                 </ButtonContainer>
                 <Terms>
                     <Header>
