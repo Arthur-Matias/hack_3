@@ -2,9 +2,16 @@ import React from 'react';
 import { Container, ProductPhoto, ProductTitle, ProductDescription, Price } from './styles.jsx';
 
 export default function Product(props){
+    console.log(props)
+
+    React.useEffect(() => {
+        alert("OI");
+    })
+
+
     return (
         <>
-            <Container>
+            <Container onClick = {props.onClick}>
                     <ProductPhoto>
                         <img src={props.photo} alt=""/>
                     </ProductPhoto>
